@@ -15,6 +15,7 @@ build/
 
 # Local env
 .env*
+.env.development.local
 !.env.example
 
 # Logs
