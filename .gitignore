@@ -14,7 +14,8 @@ build/
 .vercel/
 
 # Local env
-
+.env*
+!.env.example
 
 # Logs
 logs
