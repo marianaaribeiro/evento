@@ -5,6 +5,7 @@ import SelectOption from "../atom/SelectOption";
 import ModalDynamic from "../atom/ModalDynamic";
 import ConfettiExplosion from "../atom/ConfettiExplosion";
 import ContentSideBySide from "../atom/ContentSideBySide";
+import { baseURL } from "../../util/urls";
 
 export default function OrganizationModal({
   onClose,
@@ -56,7 +57,7 @@ export default function OrganizationModal({
     e.preventDefault();
     setIsLoading(true);
     const method = initialData?.id ? "PUT" : "POST";
-    const endpoint = `/api/organization${initialData?.id ? `?id=${initialData.id}` : ""}`;
+    const endpoint = `${baseURL}/api/organization${initialData?.id ? `?id=${initialData.id}` : ""}`;
 
     const res = await fetch(endpoint, {
       method,

@@ -18,6 +18,7 @@ import withAuth from "./withAuth";
 import ContainerBlack from "../atom/ContainerBlack";
 import OrganizationModal from "../molecule/OrganizationModal";
 import ContentSideBySide from "../atom/ContentSideBySide";
+import { baseURL } from "../../util/urls";
 
 function Dashboard() {
   const [openModal, setOpenModal] = useState(null);
@@ -162,7 +163,7 @@ function Dashboard() {
         <ContentSideBySide
           contentOne={
             <Table
-              endpoint="/api/gastos"
+              endpoint={`${baseURL}/api/gastos`}
               title="Gastos Registrados"
               columns={["Nome", "Sala", "Item", "Valor"]}
               onEdit={(row: any) => handleEdit("gasto", row)}
@@ -179,7 +180,7 @@ function Dashboard() {
         />
         <ContentLayout contentOne={
           <Table
-            endpoint="/api/decoration"
+            endpoint={`${baseURL}/api/decoration`}
             title="Inscrições de Itens de Decoração"
             columns={["Nome", "whatsapp", "sala", "descricao", "quantidade", "indeciso"]}
             onEdit={(row: any) => handleEdit("decoracao", row)}
@@ -191,7 +192,7 @@ function Dashboard() {
 
         <ContentLayout contentOne={
           <Table
-            endpoint="/api/organization"
+            endpoint={`${baseURL}/api/organization`}
             title="Inscrições de Itens de Organização"
             columns={["Nome", "whatsapp", "sala", "descricao", "quantidade", "indeciso"]}
             onEdit={(row: any) => handleEdit("organização", row)}
@@ -203,7 +204,7 @@ function Dashboard() {
 
         <ContentLayout contentOne={
           <Table
-            endpoint="/api/salgados"
+            endpoint={`${baseURL}/api/salgados`}
             title="Inscrições de Salgados ou Comidas"
             columns={["Nome", "Telefone", "Sala", "Origem", "Tipo", "Descricao", "Bebida", "Pessoas"]}
             onEdit={(row: any) => handleEdit("salgado", row)}
@@ -215,7 +216,7 @@ function Dashboard() {
 
         <ContentLayout contentOne={
           <Table
-            endpoint="/api/doces"
+            endpoint={`${baseURL}/api/doces`}
             title="Inscrições de Doces"
             columns={["Nome", "Telefone", "Sala", "Origem", "Descricao", "Bebida", "Pessoas"]}
             refreshKey={refreshKey}

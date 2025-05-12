@@ -6,6 +6,7 @@
     "build": "next build",
     "start": "next start",
     "prisma": "prisma",
+    "postinstall": "prisma generate",
     "deploy": "npm run build && git add . && git commit -m 'deploy 🚀' && git push"
   },
   "dependencies": {

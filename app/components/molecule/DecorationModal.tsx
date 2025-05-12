@@ -5,6 +5,7 @@ import SelectOption from "../atom/SelectOption";
 import ModalDynamic from "../atom/ModalDynamic";
 import ConfettiExplosion from "../atom/ConfettiExplosion";
 import ContentSideBySide from "../atom/ContentSideBySide";
+import { baseURL } from "../../util/urls";
 
 export default function DecorationModal({ onClose, onSuccess, initialData }: { onClose: () => void, onSuccess: () => void, initialData?: any }) {
     const [form, setForm] = useState({
@@ -51,7 +52,7 @@ export default function DecorationModal({ onClose, onSuccess, initialData }: { o
         };
 
         const isEdit = !!initialData?.id;
-        const res = await fetch(`/api/decoration${isEdit ? `?id=${initialData.id}` : ""}`, {
+        const res = await fetch(`${baseURL}/api/decoration${isEdit ? `?id=${initialData.id}` : ""}`, {
             method: isEdit ? "PUT" : "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(payload),

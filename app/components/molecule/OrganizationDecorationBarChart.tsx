@@ -11,6 +11,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import { baseURL } from "../../util/urls";
 
 export default function OrganizationDecorationBarChart({ refreshKey }) {
   const [data, setData] = useState([
@@ -20,8 +21,8 @@ export default function OrganizationDecorationBarChart({ refreshKey }) {
 
   useEffect(() => {
     async function fetchData() {
-      const orgRes = await fetch("/api/organization");
-      const decoRes = await fetch("/api/decoration");
+      const orgRes = await fetch(`${baseURL}/api/organization`);
+      const decoRes = await fetch(`${baseURL}/api/decoration`);
 
       const organizacao = await orgRes.json();
       const decoracao = await decoRes.json();

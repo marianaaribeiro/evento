@@ -10,6 +10,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { useIsMobile } from "../../hook/useIsMobile";
+import { baseURL } from "../../util/urls";
 
 export default function Charts({ refreshKey }) {
   const [gastos, setGastos] = useState(0);
@@ -19,12 +20,12 @@ export default function Charts({ refreshKey }) {
 
   useEffect(() => {
     async function fetchData() {
-      const gastosRes = await fetch("/api/gastos");
+      const gastosRes = await fetch(`${baseURL}/api/gastos`);
       const gastosData = await gastosRes.json();
       const totalGastos = gastosData.reduce((sum, g) => sum + Number(g.valor || 0), 0);
 
-      const salgadosRes = await fetch("/api/salgados");
-      const docesRes = await fetch("/api/doces");
+      const salgadosRes = await fetch(`${baseURL}/api/salgados`);
+      const docesRes = await fetch(`${baseURL}/api/doces`);
       const salgados = await salgadosRes.json();
       const doces = await docesRes.json();
 
