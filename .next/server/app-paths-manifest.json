@@ -1,0 +1,9 @@
+{
+  "/api/gastos/route": "app/api/gastos/route.js",
+  "/api/organization/route": "app/api/organization/route.js",
+  "/api/decoration/route": "app/api/decoration/route.js",
+  "/api/salgados/route": "app/api/salgados/route.js",
+  "/api/doces/route": "app/api/doces/route.js",
+  "/login/page": "app/login/page.js",
+  "/dashboard/page": "app/dashboard/page.js"
+}
