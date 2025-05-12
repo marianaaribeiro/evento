@@ -1,4 +1,4 @@
-// File: D:\EMPRESA\projeto evento\evento-inscricoes (5)\app\api\organization\route.ts
+// File: D:\EMPRESA\projeto evento\evento\app\api\organization\route.ts
 import * as entry from '../../../../../app/api/organization/route.js'
 import type { NextRequest } from 'next/server.js'
 

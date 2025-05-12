@@ -3,7 +3,7 @@
 import React from "react";
 import SelectOption from "../atom/SelectOption";
 import { allCountries } from "../../util/listPais";
-import ContentSideBySide from "../atom/contentSideBySide";
+import ContentSideBySide from "../atom/ContentSideBySide";
 import ModalDynamic from "../atom/ModalDynamic";
 import ConfettiExplosion from "../atom/ConfettiExplosion";
 

@@ -1,4 +1,4 @@
-// File: D:\EMPRESA\projeto evento\evento-inscricoes (5)\app\dashboard\page.tsx
+// File: D:\EMPRESA\projeto evento\evento\app\dashboard\page.tsx
 import * as entry from '../../../../app/dashboard/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import SelectOption from "../atom/SelectOption";
-import ContentSideBySide from "../atom/contentSideBySide";
 import ModalDynamic from "../atom/ModalDynamic";
 import ConfettiExplosion from "../atom/ConfettiExplosion";
+import ContentSideBySide from "../atom/ContentSideBySide";
 
 export default function OrganizationModal({
   onClose,
@@ -93,7 +93,6 @@ export default function OrganizationModal({
                 className="w-full border px-2 py-1 rounded"
               />
             </label>
-
             <ContentSideBySide
               contentOne={
                 <>

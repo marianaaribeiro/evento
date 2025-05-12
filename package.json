@@ -5,7 +5,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prisma": "prisma"
+    "prisma": "prisma",
+    "deploy": "npm run build && git add . && git commit -m 'deploy 🚀' && git push"
   },
   "dependencies": {
     "@prisma/client": "latest",

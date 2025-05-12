@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import SelectOption from "../atom/SelectOption";
-import ContentSideBySide from "../atom/contentSideBySide";
 import ModalDynamic from "../atom/ModalDynamic";
 import ConfettiExplosion from "../atom/ConfettiExplosion";
+import ContentSideBySide from "../atom/ContentSideBySide";
 
 export default function DecorationModal({ onClose, onSuccess, initialData }: { onClose: () => void, onSuccess: () => void, initialData?: any }) {
     const [form, setForm] = useState({
