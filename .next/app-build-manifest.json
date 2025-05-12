@@ -22,13 +22,6 @@
       "static/chunks/main-app-c8b9315c57b728ed.js",
       "static/chunks/app/api/decoration/route-9bd2466d67faa4c8.js"
     ],
-    "/api/doces/route": [
-      "static/chunks/webpack-07d81599008b2c2e.js",
-      "static/chunks/4bd1b696-a06c382ed846a660.js",
-      "static/chunks/684-eadee3bee00d21d7.js",
-      "static/chunks/main-app-c8b9315c57b728ed.js",
-      "static/chunks/app/api/doces/route-165b9d3dd2fec059.js"
-    ],
     "/api/gastos/route": [
       "static/chunks/webpack-07d81599008b2c2e.js",
       "static/chunks/4bd1b696-a06c382ed846a660.js",
@@ -36,12 +29,12 @@
       "static/chunks/main-app-c8b9315c57b728ed.js",
       "static/chunks/app/api/gastos/route-6f21acce41117920.js"
     ],
-    "/api/salgados/route": [
+    "/api/doces/route": [
       "static/chunks/webpack-07d81599008b2c2e.js",
       "static/chunks/4bd1b696-a06c382ed846a660.js",
       "static/chunks/684-eadee3bee00d21d7.js",
       "static/chunks/main-app-c8b9315c57b728ed.js",
-      "static/chunks/app/api/salgados/route-81a7b0efa7796f57.js"
+      "static/chunks/app/api/doces/route-165b9d3dd2fec059.js"
     ],
     "/api/organization/route": [
       "static/chunks/webpack-07d81599008b2c2e.js",
@@ -50,13 +43,20 @@
       "static/chunks/main-app-c8b9315c57b728ed.js",
       "static/chunks/app/api/organization/route-ee9b039b5eb55b1b.js"
     ],
+    "/api/salgados/route": [
+      "static/chunks/webpack-07d81599008b2c2e.js",
+      "static/chunks/4bd1b696-a06c382ed846a660.js",
+      "static/chunks/684-eadee3bee00d21d7.js",
+      "static/chunks/main-app-c8b9315c57b728ed.js",
+      "static/chunks/app/api/salgados/route-81a7b0efa7796f57.js"
+    ],
     "/dashboard/page": [
       "static/chunks/webpack-07d81599008b2c2e.js",
       "static/chunks/4bd1b696-a06c382ed846a660.js",
       "static/chunks/684-eadee3bee00d21d7.js",
       "static/chunks/main-app-c8b9315c57b728ed.js",
       "static/chunks/444-0a81e52abd9d0c6c.js",
-      "static/chunks/app/dashboard/page-70c58751cb864827.js"
+      "static/chunks/app/dashboard/page-2e60ac6beccff2d5.js"
     ],
     "/login/page": [
       "static/chunks/webpack-07d81599008b2c2e.js",

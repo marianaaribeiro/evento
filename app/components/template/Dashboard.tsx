@@ -7,7 +7,6 @@ import DoceModal from "../molecule/DoceModal";
 import GastoModal from "../molecule/GastoModal";
 import Charts from "../atom/Charts";
 import Table from "../atom/Table";
-import ContentSideBySide from "../atom/contentSideBySide";
 import ContentLayout from "../atom/ContentLayout";
 import DecorationModal from "../molecule/DecorationModal";
 import ChartsFoods from "../molecule/ChartsFoods";
@@ -18,6 +17,7 @@ import AvatarCard from "../atom/AvatarCard";
 import withAuth from "./withAuth";
 import ContainerBlack from "../atom/ContainerBlack";
 import OrganizationModal from "../molecule/OrganizationModal";
+import ContentSideBySide from "../atom/ContentSideBySide";
 
 function Dashboard() {
   const [openModal, setOpenModal] = useState(null);
