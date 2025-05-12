@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import SelectOption from "../atom/SelectOption";
 import ModalDynamic from "../atom/ModalDynamic";
 import ConfettiExplosion from "../atom/ConfettiExplosion";
+import { baseURL } from "../../util/urls";
 
 export default function GastoModal({ onClose, onSuccess, initialData }) {
   const [sala, setSala] = useState(initialData?.sala || "");

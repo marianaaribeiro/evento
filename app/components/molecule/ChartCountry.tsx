@@ -16,8 +16,8 @@ export default function ChartCountry({ refreshKey }) {
 
   useEffect(() => {
     async function fetchData() {
-      const salgadosRes = await fetch(`${baseURL}/api/salgados`);
-      const docesRes = await fetch(`${baseURL}/api/doces`);
+      const salgadosRes = await fetch(`/api/salgados`);
+      const docesRes = await fetch(`/api/doces`);
 
       const salgados = await salgadosRes.json();
       const doces = await docesRes.json();

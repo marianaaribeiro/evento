@@ -6,7 +6,6 @@ import { allCountries } from "../../util/listPais";
 import ContentSideBySide from "../atom/ContentSideBySide";
 import ModalDynamic from "../atom/ModalDynamic";
 import ConfettiExplosion from "../atom/ConfettiExplosion";
-import { baseURL } from "../../util/urls";
 
 export default function SalgadoModal({ onClose, onSuccess, initialData }) {
   const [sala, setSala] = React.useState(initialData?.sala || "");
@@ -26,7 +25,7 @@ export default function SalgadoModal({ onClose, onSuccess, initialData }) {
     if (data.pessoas) data.pessoas = parseInt(data.pessoas);
 
     const isEditing = !!initialData?.id;
-    const res = await fetch(`${baseURL}/api/salgados${isEditing ? `?id=${initialData.id}` : ""}`, {
+    const res = await fetch(`/api/salgados${isEditing ? `?id=${initialData.id}` : ""}`, {
       method: isEditing ? "PUT" : "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

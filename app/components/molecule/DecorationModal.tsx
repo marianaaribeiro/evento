@@ -52,7 +52,7 @@ export default function DecorationModal({ onClose, onSuccess, initialData }: { o
         };
 
         const isEdit = !!initialData?.id;
-        const res = await fetch(`${baseURL}/api/decoration${isEdit ? `?id=${initialData.id}` : ""}`, {
+        const res = await fetch(`/api/decoration${isEdit ? `?id=${initialData.id}` : ""}`, {
             method: isEdit ? "PUT" : "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(payload),

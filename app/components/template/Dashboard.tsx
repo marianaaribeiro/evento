@@ -18,7 +18,6 @@ import withAuth from "./withAuth";
 import ContainerBlack from "../atom/ContainerBlack";
 import OrganizationModal from "../molecule/OrganizationModal";
 import ContentSideBySide from "../atom/ContentSideBySide";
-import { baseURL } from "../../util/urls";
 
 function Dashboard() {
   const [openModal, setOpenModal] = useState(null);
@@ -163,7 +162,7 @@ function Dashboard() {
         <ContentSideBySide
           contentOne={
             <Table
-              endpoint={`${baseURL}/api/gastos`}
+              endpoint={`/api/gastos`}
               title="Gastos Registrados"
               columns={["Nome", "Sala", "Item", "Valor"]}
               onEdit={(row: any) => handleEdit("gasto", row)}
@@ -180,7 +179,7 @@ function Dashboard() {
         />
         <ContentLayout contentOne={
           <Table
-            endpoint={`${baseURL}/api/decoration`}
+            endpoint={`/api/decoration`}
             title="Inscrições de Itens de Decoração"
             columns={["Nome", "whatsapp", "sala", "descricao", "quantidade", "indeciso"]}
             onEdit={(row: any) => handleEdit("decoracao", row)}
@@ -192,7 +191,7 @@ function Dashboard() {
 
         <ContentLayout contentOne={
           <Table
-            endpoint={`${baseURL}/api/organization`}
+            endpoint={`/api/organization`}
             title="Inscrições de Itens de Organização"
             columns={["Nome", "whatsapp", "sala", "descricao", "quantidade", "indeciso"]}
             onEdit={(row: any) => handleEdit("organização", row)}
@@ -204,7 +203,7 @@ function Dashboard() {
 
         <ContentLayout contentOne={
           <Table
-            endpoint={`${baseURL}/api/salgados`}
+            endpoint={`/api/salgados`}
             title="Inscrições de Salgados ou Comidas"
             columns={["Nome", "Telefone", "Sala", "Origem", "Tipo", "Descricao", "Bebida", "Pessoas"]}
             onEdit={(row: any) => handleEdit("salgado", row)}
@@ -216,7 +215,7 @@ function Dashboard() {
 
         <ContentLayout contentOne={
           <Table
-            endpoint={`${baseURL}/api/doces`}
+            endpoint={`/api/doces`}
             title="Inscrições de Doces"
             columns={["Nome", "Telefone", "Sala", "Origem", "Descricao", "Bebida", "Pessoas"]}
             refreshKey={refreshKey}

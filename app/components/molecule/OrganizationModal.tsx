@@ -57,7 +57,7 @@ export default function OrganizationModal({
     e.preventDefault();
     setIsLoading(true);
     const method = initialData?.id ? "PUT" : "POST";
-    const endpoint = `${baseURL}/api/organization${initialData?.id ? `?id=${initialData.id}` : ""}`;
+    const endpoint = `/api/organization${initialData?.id ? `?id=${initialData.id}` : ""}`;
 
     const res = await fetch(endpoint, {
       method,

@@ -24,7 +24,7 @@ export default function DoceModal({ onClose, onSuccess, initialData }) {
     if (data.pessoas) data.pessoas = parseInt(data.pessoas);
 
     const isEditing = !!initialData?.id;
-    const res = await fetch(`${baseURL}/api/doces${isEditing ? `?id=${initialData.id}` : ""}`, {
+    const res = await fetch(`/api/doces${isEditing ? `?id=${initialData.id}` : ""}`, {
       method: isEditing ? "PUT" : "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
